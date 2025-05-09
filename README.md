@@ -1,6 +1,6 @@
 # Library Management System
 
-#MEHMET KUTAY AKPINAR FINAL PROJECT
+MEHMET KUTAY AKPINAR FINAL PROJECT
 
 
 ## Project Overview
@@ -34,22 +34,8 @@ The Library Management System is a comprehensive solution for managing library o
 
 ## Database Schema
 
-```
-+----------------+       +----------------+       +----------------+
-|      USER      |       |    BORROWING   |       |      BOOK      |
-+----------------+       +----------------+       +----------------+
-| id             |<----->| id             |<----->| id             |
-| first_name     |       | borrow_date    |       | title          |
-| last_name      |       | due_date       |       | author         |
-| email          |       | return_date    |       | isbn           |
-| password       |       | status         |       | publication_date|
-| phone_number   |       | created_at     |       | genre          |
-| role           |       | updated_at     |       | description    |
-| address        |       |                |       | publisher      |
-| created_at     |       |                |       | page_count     |
-| updated_at     |       |                |       | available      |
-+----------------+       +----------------+       +----------------+
-```
+<img width="732" alt="Ekran Resmi 2025-05-09 18 10 47" src="https://github.com/user-attachments/assets/71325024-b097-4885-a670-36cbbfe69613" />
+
 
 ## Running Locally
 
@@ -206,3 +192,13 @@ The application implements JWT-based authentication with the following features:
 - Exception handling is centralized with custom exception types
 - Data transfer objects (DTOs) are used to separate API models from internal entities
 - The system automatically manages book availability status when borrowed or returned
+
+<img width="1470" alt="Ekran Resmi 2025-05-09 17 31 40" src="https://github.com/user-attachments/assets/48f81ac2-c004-46ac-b865-88f32bd31be7" />
+<img width="1470" alt="Ekran Resmi 2025-05-09 17 31 13" src="https://github.com/user-attachments/assets/d5bb6bc1-a548-4d83-9700-d929f8b305b7" />
+<img width="1470" alt="Ekran Resmi 2025-05-09 17 31 02" src="https://github.com/user-attachments/assets/b18d4555-87ef-43bd-9d5d-11da4c778089" />
+<img width="1470" alt="Ekran Resmi 2025-05-09 17 30 33" src="https://github.com/user-attachments/assets/2e2d85f2-12e8-4f54-8eaa-7896d673b89d" />
+<img width="1470" alt="Ekran Resmi 2025-05-09 17 30 12" src="https://github.com/user-attachments/assets/48ef169d-df5e-4d6e-8a7e-ede2dc068181" />
+<img width="1470" alt="Ekran Resmi 2025-05-09 17 29 58" src="https://github.com/user-attachments/assets/09c0e7e1-50ad-43b2-a0d0-0850d708e872" />
+<img width="1465" alt="Ekran Resmi 2025-05-09 17 29 37" src="https://github.com/user-attachments/assets/e99561a5-1f67-49bf-ae96-cc0867e739e4" />
+
+
