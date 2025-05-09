@@ -129,31 +129,12 @@ chmod +x docker-utils.sh
 The API is documented using Swagger UI, which can be accessed at http://localhost:8080/swagger-ui.html when the application is running.
 
 ### Core Endpoints
+<img width="1348" alt="Ekran Resmi 2025-05-09 18 15 42" src="https://github.com/user-attachments/assets/b14353fa-d2e3-4185-9ba8-87d166273977" />
+<img width="1358" alt="Ekran Resmi 2025-05-09 18 15 34" src="https://github.com/user-attachments/assets/577e86fd-4879-4428-9389-7ead7fbf0ed5" />
+<img width="1381" alt="Ekran Resmi 2025-05-09 18 15 25" src="https://github.com/user-attachments/assets/dc934bd6-ff86-4f9c-a597-6625a9aea62b" />
+<img width="1269" alt="Ekran Resmi 2025-05-09 18 15 54" src="https://github.com/user-attachments/assets/a67122b4-11b0-440b-82ce-1edf68605d95" />
 
-#### Authentication
-- `POST /api/auth/register` - Register a new user
-- `POST /api/auth/login` - Authenticate and get JWT token
 
-#### Books
-- `GET /api/books` - List all books
-- `GET /api/books/{id}` - Get book by ID
-- `POST /api/books` - Create a new book
-- `PUT /api/books/{id}` - Update book information
-- `DELETE /api/books/{id}` - Delete a book
-- `GET /api/books/search` - Search books by criteria
-
-#### Users
-- `GET /api/users` - List all users (admin only)
-- `GET /api/users/{id}` - Get user by ID
-- `PUT /api/users/{id}` - Update user information
-- `DELETE /api/users/{id}` - Delete a user
-
-#### Borrowings
-- `GET /api/borrowings` - List all borrowings
-- `GET /api/borrowings/{id}` - Get borrowing details
-- `POST /api/borrowings` - Create a new borrowing
-- `PUT /api/borrowings/{id}/return` - Return a book
-- `GET /api/borrowings/user/{userId}` - Get user borrowing history
 
 ## Configuration
 
