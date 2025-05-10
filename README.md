@@ -17,6 +17,7 @@ The Library Management System is a comprehensive solution for managing library o
 - **Secure Authentication**: JWT-based authentication system
 - **Comprehensive Logging**: Track system activities with structured logging
 - **API Documentation**: Swagger UI for easy API exploration and testing
+- **SPRING WEB FLUX REAL TIME UPDATES**
 
 ## Technology Stack
 
@@ -31,6 +32,7 @@ The Library Management System is a comprehensive solution for managing library o
 - **Validation**: Jakarta Bean Validation
 - **Logging**: Logback with structured logging
 - **Development Tools**: Lombok for boilerplate reduction, AOP for cross-cutting concerns
+- **Reactive Programming**:Spring WebFlux
 
 ## Database Schema
 
@@ -176,6 +178,8 @@ The application implements JWT-based authentication with the following features:
 - Exception handling is centralized with custom exception types
 - Data transfer objects (DTOs) are used to separate API models from internal entities
 - The system automatically manages book availability status when borrowed or returned
+- SPRING WEB FLUX REAL TIME UPDATES
+
 
 <img width="1470" alt="Ekran Resmi 2025-05-09 17 31 40" src="https://github.com/user-attachments/assets/48f81ac2-c004-46ac-b865-88f32bd31be7" />
 <img width="1470" alt="Ekran Resmi 2025-05-09 17 31 13" src="https://github.com/user-attachments/assets/d5bb6bc1-a548-4d83-9700-d929f8b305b7" />
@@ -184,5 +188,10 @@ The application implements JWT-based authentication with the following features:
 <img width="1470" alt="Ekran Resmi 2025-05-09 17 30 12" src="https://github.com/user-attachments/assets/48ef169d-df5e-4d6e-8a7e-ede2dc068181" />
 <img width="1470" alt="Ekran Resmi 2025-05-09 17 29 58" src="https://github.com/user-attachments/assets/09c0e7e1-50ad-43b2-a0d0-0850d708e872" />
 <img width="1465" alt="Ekran Resmi 2025-05-09 17 29 37" src="https://github.com/user-attachments/assets/e99561a5-1f67-49bf-ae96-cc0867e739e4" />
+
+## SPRING WEBFLUX DEMO
+<img width="1470" alt="Ekran Resmi 2025-05-10 21 33 24" src="https://github.com/user-attachments/assets/d356aeb0-5ff1-4b05-a697-657b56d39f21" />
+
+<img width="1470" alt="Ekran Resmi 2025-05-10 21 35 27" src="https://github.com/user-attachments/assets/5d7fac7b-4f80-4fa4-8e6e-ea13c4a874ac" />
 
 
