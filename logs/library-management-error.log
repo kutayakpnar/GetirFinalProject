@@ -27,3 +27,6 @@ Action:
 Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
 
 2025-05-10 21:29:25 [http-nio-8080-exec-4] ERROR c.l.l.security.JwtTokenProvider - Expired JWT token: JWT expired at 2025-05-10T12:28:05Z. Current time: 2025-05-10T18:29:25Z, a difference of 21680261 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-05-10 21:34:07 [http-nio-8080-exec-6] ERROR c.l.l.security.JwtTokenProvider - Expired JWT token: JWT expired at 2025-05-10T12:28:05Z. Current time: 2025-05-10T18:34:07Z, a difference of 21962729 milliseconds.  Allowed clock skew: 0 milliseconds.
+2025-05-10 21:34:34 [http-nio-8080-exec-7] ERROR c.l.l.service.UserServiceImpl - Exception in com.librarymanagement.librarymanagement.service.UserServiceImpl.registerUserAndReturn() with cause = 'NULL' and exception = 'User with email kutay2@patron.com already exists'
+2025-05-10 21:34:34 [http-nio-8080-exec-7] ERROR c.l.l.controller.UserController - Exception in com.librarymanagement.librarymanagement.controller.UserController.registerUser() with cause = 'NULL' and exception = 'User with email kutay2@patron.com already exists'

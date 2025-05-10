@@ -167,6 +167,9 @@ The application implements JWT-based authentication with the following features:
 - Secure API endpoints based on roles
 - JWT expiration configuration
 
+## Postman
+   https://.postman.co/workspace/My-Workspace~369b2625-e9cc-409b-8d7a-08fdbb568a29/collection/28747315-bdbcd869-a55d-442a-906f-6f92fc066307?action=share&creator=28747315
+   
 ## Additional Information
 
 - The application uses aspect-oriented programming (AOP) for cross-cutting concerns such as logging
