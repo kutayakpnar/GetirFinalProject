@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Book Availability Updates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        #updates {
+            margin-top: 20px;
+        }
+        .update {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+        .available {
+            border-left: 5px solid #4CAF50;
+        }
+        .unavailable {
+            border-left: 5px solid #F44336;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Book Availability Updates</h1>
+    <div id="connection-status">Connecting to updates...</div>
+    <div id="updates"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const updatesContainer = document.getElementById('updates');
+            const connectionStatus = document.getElementById('connection-status');
+            
+            // Create EventSource for server-sent events
+            const eventSource = new EventSource('/api/books/availability/stream');
+            
+            // Connection opened
+            eventSource.onopen = function() {
+                connectionStatus.textContent = 'Connected! Waiting for updates...';
+                connectionStatus.style.color = '#4CAF50';
+            };
+            
+            // Listen for messages
+            eventSource.onmessage = function(event) {
+                const update = JSON.parse(event.data);
+                
+                // Create update element
+                const updateElement = document.createElement('div');
+                updateElement.className = `update ${update.available ? 'available' : 'unavailable'}`;
+                
+                // Format the time
+                const timestamp = new Date(update.timestamp).toLocaleString();
+                
+                // Set the content
+                updateElement.innerHTML = `
+                    <h3>${update.title}</h3>
+                    <p>Status: <strong>${update.available ? 'Available' : 'Not Available'}</strong></p>
+                    <p>Book ID: ${update.bookId}</p>
+                    <p class="timestamp">${timestamp}</p>
+                `;
+                
+                // Add to the container at the top
+                updatesContainer.insertBefore(updateElement, updatesContainer.firstChild);
+            };
+            
+            // Handle errors
+            eventSource.onerror = function() {
+                connectionStatus.textContent = 'Connection lost. Attempting to reconnect...';
+                connectionStatus.style.color = '#F44336';
+            };
+        });
+    </script>
+</body>
+</html> 

@@ -33,6 +33,7 @@ public class BorrowingServiceImpl implements BorrowingService {
     private final BorrowingRepository borrowingRepository;
     private final BookRepository bookRepository;
     private final UserRepository userRepository;
+    private final BookAvailabilityService bookAvailabilityService;
     
     @Value("${app.borrowing.max-books:5}")
     private int maxBooksPerUser;
@@ -120,6 +121,10 @@ public class BorrowingServiceImpl implements BorrowingService {
             book.setAvailable(false);
             book.setUpdatedAt(LocalDateTime.now());
             bookRepository.save(book);
+            
+            // Publish real-time update about book availability
+            bookAvailabilityService.publishAvailabilityUpdate(book.getId(), book.getTitle(), false);
+            
             logger.debug("Book marked as unavailable: ID: {}, Title: {}", book.getId(), book.getTitle());
 
             // Borçlanma kaydını kaydet
@@ -186,6 +191,12 @@ public class BorrowingServiceImpl implements BorrowingService {
             book.setAvailable(true);
             book.setUpdatedAt(LocalDateTime.now());
             bookRepository.save(book);
+            
+            // Publish real-time update about book availability
+            bookAvailabilityService.publishAvailabilityUpdate(
+                    book.getId(), 
+                    book.getTitle(), 
+                    true);
             
             logger.debug("Book marked as available: ID: {}, Title: {}", book.getId(), book.getTitle());
 

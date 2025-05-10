@@ -1,0 +1,3398 @@
+{
+	"info": {
+		"_postman_id": "bdbcd869-a55d-442a-906f-6f92fc066307",
+		"name": "PATIKA LIBRARY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28747315"
+	},
+	"item": [
+		{
+			"name": "USER MANAGEMENT",
+			"item": [
+				{
+					"name": "PATRON REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Kutay\",\n  \"lastName\": \"Akpınar\",\n  \"email\": \"kutay@patron.com\",\n  \"password\": \"1234\",\n  \"phoneNumber\": \"5551234567\",\n  \"address\": \"İzmir, Türkiye\",\n  \"role\": \"PATRON\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PATRON REGISTER",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"Kutay\",\n  \"lastName\": \"Akpınar\",\n  \"email\": \"kutay2@patron.com\",\n  \"password\": \"1234\",\n  \"phoneNumber\": \"5551234567\",\n  \"address\": \"İzmir, Türkiye\",\n  \"role\": \"PATRON\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:52:56 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjEyLCJlbWFpbCI6Imt1dGF5MkBwYXRyb24uY29tIiwic3ViIjoia3V0YXkyQHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3OTUxNzYsImV4cCI6MTc0Njg4MTU3Nn0.bHDPTqQO1I8IblJHsMt0nuQ7tEEI7xUX4qyrPlxQbStR9cCyUg4UZ4u6M3n81ZRsJb14afLXmubiyqLF0DZivQ\",\n    \"tokenType\": null,\n    \"id\": 12,\n    \"email\": \"kutay2@patron.com\",\n    \"role\": \"PATRON\"\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Çağla\",\n  \"lastName\": \"Akpınar\",\n  \"email\": \"cagla@librarian.com\",\n  \"password\": \"1234\",\n  \"phoneNumber\": \"5551234567\",\n  \"address\": \"İzmir, Türkiye\",\n  \"role\": \"LIBRARIAN\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN REGISTER",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"Çağla\",\n  \"lastName\": \"Akpınar\",\n  \"email\": \"cagla2@librarian.com\",\n  \"password\": \"1234\",\n  \"phoneNumber\": \"5551234567\",\n  \"address\": \"İzmir, Türkiye\",\n  \"role\": \"LIBRARIAN\"\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:53:04 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjEzLCJlbWFpbCI6ImNhZ2xhMkBsaWJyYXJpYW4uY29tIiwic3ViIjoiY2FnbGEyQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3OTUxODQsImV4cCI6MTc0Njg4MTU4NH0.eZnhsrjk02M5SmkU_F9n7DmnEJKb-1PJtyTYAWvy-5LUF2IBMdOg53UZUCKYZBwl8EsAnSHyddY5oq6c9OwuiQ\",\n    \"tokenType\": null,\n    \"id\": 13,\n    \"email\": \"cagla2@librarian.com\",\n    \"role\": \"LIBRARIAN\"\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN GET ALL USERS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN GET ALL USERS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:53:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 6,\n        \"firstName\": \"Çağla\",\n        \"lastName\": \"Akpınar\",\n        \"email\": \"cagla@librarian1.com\",\n        \"phoneNumber\": \"5551234567\",\n        \"role\": \"LIBRARIAN\",\n        \"address\": \"İzmir, Türkiye\",\n        \"createdAt\": \"2025-05-08T15:07:35.884476\"\n    },\n    {\n        \"id\": 9,\n        \"firstName\": \"Kutay\",\n        \"lastName\": \"Akpınar\",\n        \"email\": \"kutay@patron1.com\",\n        \"phoneNumber\": \"5551234567\",\n        \"role\": \"PATRON\",\n        \"address\": \"İzmir, Türkiye\",\n        \"createdAt\": \"2025-05-08T15:49:55.018998\"\n    },\n    {\n        \"id\": 10,\n        \"firstName\": \"Kutay\",\n        \"lastName\": \"Akpınar\",\n        \"email\": \"kutay@patron.com\",\n        \"phoneNumber\": \"5551234567\",\n        \"role\": \"PATRON\",\n        \"address\": \"İzmir, Türkiye\",\n        \"createdAt\": \"2025-05-09T15:28:05.070718\"\n    },\n    {\n        \"id\": 11,\n        \"firstName\": \"Çağla\",\n        \"lastName\": \"Akpınar\",\n        \"email\": \"cagla@librarian.com\",\n        \"phoneNumber\": \"5551234567\",\n        \"role\": \"LIBRARIAN\",\n        \"address\": \"İzmir, Türkiye\",\n        \"createdAt\": \"2025-05-09T15:28:23.921482\"\n    },\n    {\n        \"id\": 12,\n        \"firstName\": \"Kutay\",\n        \"lastName\": \"Akpınar\",\n        \"email\": \"kutay2@patron.com\",\n        \"phoneNumber\": \"5551234567\",\n        \"role\": \"PATRON\",\n        \"address\": \"İzmir, Türkiye\",\n        \"createdAt\": \"2025-05-09T15:52:56.84671\"\n    },\n    {\n        \"id\": 13,\n        \"firstName\": \"Çağla\",\n        \"lastName\": \"Akpınar\",\n        \"email\": \"cagla2@librarian.com\",\n        \"phoneNumber\": \"5551234567\",\n        \"role\": \"LIBRARIAN\",\n        \"address\": \"İzmir, Türkiye\",\n        \"createdAt\": \"2025-05-09T15:53:04.33467\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN GET USER DETAIL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN GET USER DETAIL",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:53:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"firstName\": \"Kutay\",\n    \"lastName\": \"Akpınar\",\n    \"email\": \"kutay@patron.com\",\n    \"phoneNumber\": \"5551234567\",\n    \"role\": \"PATRON\",\n    \"address\": \"İzmir, Türkiye\",\n    \"createdAt\": \"2025-05-09T15:28:05.070718\"\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN UPDATE USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"KutayUPDATED\",\n  \"lastName\": \"Akpınar\",\n  \"email\": \"kutay@patron.com\",\n  \"password\": \"1234\",\n  \"phoneNumber\": \"5551234567\",\n  \"address\": \"İzmir, Türkiye\",\n  \"role\": \"PATRON\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/users/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN UPDATE USER",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"firstName\": \"KutayUPDATED\",\n  \"lastName\": \"Akpınar\",\n  \"email\": \"kutay@patron.com\",\n  \"password\": \"1234\",\n  \"phoneNumber\": \"5551234567\",\n  \"address\": \"İzmir, Türkiye\",\n  \"role\": \"PATRON\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/users/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:54:06 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"firstName\": \"KutayUPDATED\",\n    \"lastName\": \"Akpınar\",\n    \"email\": \"kutay@patron.com\",\n    \"phoneNumber\": \"5551234567\",\n    \"role\": \"PATRON\",\n    \"address\": \"İzmir, Türkiye\",\n    \"createdAt\": \"2025-05-09T15:28:05.070718\"\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN DELETE USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/users/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"users",
+								"7"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN DELETE USER",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/users/12",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"users",
+										"12"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:54:46 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BOOK MANAGEMENT",
+			"item": [
+				{
+					"name": "LIBRARIAN ADD BOOK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Clean Architecture\",\n  \"author\": \"Robert C. Martin\",\n  \"isbn\": \"9780134494166\",\n  \"publicationDate\": \"2017-09-20\",\n  \"genre\": \"TECH\",\n  \"description\": \"A guide to software structure and discipline.\",\n  \"publisher\": \"Pearson\",\n  \"pageCount\": 432\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN ADD BOOK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Clean Architecture 2\",\n  \"author\": \"Robert C. Martin\",\n  \"isbn\": \"9780134494111\",\n  \"publicationDate\": \"2017-09-20\",\n  \"genre\": \"TECH\",\n  \"description\": \"A guide to software structure and discipline.\",\n  \"publisher\": \"Pearson\",\n  \"pageCount\": 432\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:55:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 5,\n    \"title\": \"Clean Architecture 2\",\n    \"author\": \"Robert C. Martin\",\n    \"isbn\": \"9780134494111\",\n    \"publicationDate\": \"2017-09-20\",\n    \"genre\": \"TECH\",\n    \"description\": \"A guide to software structure and discipline.\",\n    \"publisher\": \"Pearson\",\n    \"pageCount\": 432,\n    \"createdAt\": \"2025-05-09T15:55:36.081746\",\n    \"updatedAt\": null,\n    \"available\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN ADD BOOK 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Dune\",\n  \"author\": \"Frank Herbert\",\n  \"isbn\": \"9780441172719\",\n  \"publicationDate\": \"1965-08-01\",\n  \"genre\": \"SCIENCE_FICTION\",\n  \"description\": \"A sci-fi epic set on the desert planet Arrakis.\",\n  \"publisher\": \"Ace Books\",\n  \"pageCount\": 688\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIBRARIAN ADD BOOK 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Crime and Punishment\",\n  \"author\": \"Fyodor Dostoevsky\",\n  \"isbn\": \"9780140449136\",\n  \"publicationDate\": \"1866-01-01\",\n  \"genre\": \"OTHER\",\n  \"description\": \"A psychological study of guilt and redemption.\",\n  \"publisher\": \"Penguin Classics\",\n  \"pageCount\": 671\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LIBRARIAN GET BOOKS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN GET BOOKS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:55:48 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"Dune\",\n        \"author\": \"Frank Herbert\",\n        \"isbn\": \"9780441172719\",\n        \"publicationDate\": \"1965-08-01\",\n        \"genre\": \"SCIENCE_FICTION\",\n        \"description\": \"A sci-fi epic set on the desert planet Arrakis.\",\n        \"publisher\": \"Ace Books\",\n        \"pageCount\": 688,\n        \"createdAt\": \"2025-05-08T15:45:51.066606\",\n        \"updatedAt\": null,\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Crime and Punishment\",\n        \"author\": \"Fyodor Dostoevsky\",\n        \"isbn\": \"9780140449136\",\n        \"publicationDate\": \"1866-01-01\",\n        \"genre\": \"OTHER\",\n        \"description\": \"A psychological study of guilt and redemption.\",\n        \"publisher\": \"Penguin Classics\",\n        \"pageCount\": 671,\n        \"createdAt\": \"2025-05-08T15:46:46.917004\",\n        \"updatedAt\": null,\n        \"available\": true\n    },\n    {\n        \"id\": 1,\n        \"title\": \"Clean Architecture\",\n        \"author\": \"Robert C. Martin\",\n        \"isbn\": \"9780134494166\",\n        \"publicationDate\": \"2017-09-20\",\n        \"genre\": \"TECH\",\n        \"description\": \"A guide to software structure and discipline.\",\n        \"publisher\": \"Pearson\",\n        \"pageCount\": 435,\n        \"createdAt\": \"2025-05-08T15:43:57.797837\",\n        \"updatedAt\": \"2025-05-09T15:34:57.376708\",\n        \"available\": false\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Clean Architecture 2\",\n        \"author\": \"Robert C. Martin\",\n        \"isbn\": \"9780134494111\",\n        \"publicationDate\": \"2017-09-20\",\n        \"genre\": \"TECH\",\n        \"description\": \"A guide to software structure and discipline.\",\n        \"publisher\": \"Pearson\",\n        \"pageCount\": 432,\n        \"createdAt\": \"2025-05-09T15:55:36.081746\",\n        \"updatedAt\": null,\n        \"available\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "PATRON GET BOOKS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjksImVtYWlsIjoia3V0YXlAcGF0cm9uLmNvbSIsInN1YiI6Imt1dGF5QHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3MDg1OTUsImV4cCI6MTc0Njc5NDk5NX0.MEJ5szUVqToQaDpvODe2N7MgkwyIEKKWmalTbw_KjmmICnFGONdDaTvzo3NhGNWvqscoFskmA_H7J75p8EyvUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PATRON GET BOOKS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:56:14 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"title\": \"Dune\",\n        \"author\": \"Frank Herbert\",\n        \"isbn\": \"9780441172719\",\n        \"publicationDate\": \"1965-08-01\",\n        \"genre\": \"SCIENCE_FICTION\",\n        \"description\": \"A sci-fi epic set on the desert planet Arrakis.\",\n        \"publisher\": \"Ace Books\",\n        \"pageCount\": 688,\n        \"createdAt\": \"2025-05-08T15:45:51.066606\",\n        \"updatedAt\": null,\n        \"available\": true\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Crime and Punishment\",\n        \"author\": \"Fyodor Dostoevsky\",\n        \"isbn\": \"9780140449136\",\n        \"publicationDate\": \"1866-01-01\",\n        \"genre\": \"OTHER\",\n        \"description\": \"A psychological study of guilt and redemption.\",\n        \"publisher\": \"Penguin Classics\",\n        \"pageCount\": 671,\n        \"createdAt\": \"2025-05-08T15:46:46.917004\",\n        \"updatedAt\": null,\n        \"available\": true\n    },\n    {\n        \"id\": 1,\n        \"title\": \"Clean Architecture\",\n        \"author\": \"Robert C. Martin\",\n        \"isbn\": \"9780134494166\",\n        \"publicationDate\": \"2017-09-20\",\n        \"genre\": \"TECH\",\n        \"description\": \"A guide to software structure and discipline.\",\n        \"publisher\": \"Pearson\",\n        \"pageCount\": 435,\n        \"createdAt\": \"2025-05-08T15:43:57.797837\",\n        \"updatedAt\": \"2025-05-09T15:34:57.376708\",\n        \"available\": false\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Clean Architecture 2\",\n        \"author\": \"Robert C. Martin\",\n        \"isbn\": \"9780134494111\",\n        \"publicationDate\": \"2017-09-20\",\n        \"genre\": \"TECH\",\n        \"description\": \"A guide to software structure and discipline.\",\n        \"publisher\": \"Pearson\",\n        \"pageCount\": 432,\n        \"createdAt\": \"2025-05-09T15:55:36.081746\",\n        \"updatedAt\": null,\n        \"available\": true\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN GET A BOOK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN GET A BOOK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:56:36 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"Crime and Punishment\",\n    \"author\": \"Fyodor Dostoevsky\",\n    \"isbn\": \"9780140449136\",\n    \"publicationDate\": \"1866-01-01\",\n    \"genre\": \"OTHER\",\n    \"description\": \"A psychological study of guilt and redemption.\",\n    \"publisher\": \"Penguin Classics\",\n    \"pageCount\": 671,\n    \"createdAt\": \"2025-05-08T15:46:46.917004\",\n    \"updatedAt\": null,\n    \"available\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "PATRON GET A BOOK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjksImVtYWlsIjoia3V0YXlAcGF0cm9uLmNvbSIsInN1YiI6Imt1dGF5QHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3MDg1OTUsImV4cCI6MTc0Njc5NDk5NX0.MEJ5szUVqToQaDpvODe2N7MgkwyIEKKWmalTbw_KjmmICnFGONdDaTvzo3NhGNWvqscoFskmA_H7J75p8EyvUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PATRON GET A BOOK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:56:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"Crime and Punishment\",\n    \"author\": \"Fyodor Dostoevsky\",\n    \"isbn\": \"9780140449136\",\n    \"publicationDate\": \"1866-01-01\",\n    \"genre\": \"OTHER\",\n    \"description\": \"A psychological study of guilt and redemption.\",\n    \"publisher\": \"Penguin Classics\",\n    \"pageCount\": 671,\n    \"createdAt\": \"2025-05-08T15:46:46.917004\",\n    \"updatedAt\": null,\n    \"available\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "SEARCH BOOKS BY TITLE(PAGINATION)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjksImVtYWlsIjoia3V0YXlAcGF0cm9uLmNvbSIsInN1YiI6Imt1dGF5QHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3MDg1OTUsImV4cCI6MTc0Njc5NDk5NX0.MEJ5szUVqToQaDpvODe2N7MgkwyIEKKWmalTbw_KjmmICnFGONdDaTvzo3NhGNWvqscoFskmA_H7J75p8EyvUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/search/title/paged?title=Dune&page=0&size=10&sortBy=title&direction=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"search",
+								"title",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Dune"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "direction",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SEARCH BOOKS BY TITLE(PAGINATION)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/search/title/paged?title=Dune&page=0&size=10&sortBy=title&direction=asc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"search",
+										"title",
+										"paged"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "Dune"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										},
+										{
+											"key": "sortBy",
+											"value": "title"
+										},
+										{
+											"key": "direction",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:57:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 2,\n            \"title\": \"Dune\",\n            \"author\": \"Frank Herbert\",\n            \"isbn\": \"9780441172719\",\n            \"publicationDate\": \"1965-08-01\",\n            \"genre\": \"SCIENCE_FICTION\",\n            \"description\": \"A sci-fi epic set on the desert planet Arrakis.\",\n            \"publisher\": \"Ace Books\",\n            \"pageCount\": 688,\n            \"createdAt\": \"2025-05-08T15:45:51.066606\",\n            \"updatedAt\": null,\n            \"available\": true\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"last\": true,\n    \"first\": true,\n    \"numberOfElements\": 1,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "SEARCH  BOOKS BY AUTHOR(PAGINATION)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjksImVtYWlsIjoia3V0YXlAcGF0cm9uLmNvbSIsInN1YiI6Imt1dGF5QHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3MDg1OTUsImV4cCI6MTc0Njc5NDk5NX0.MEJ5szUVqToQaDpvODe2N7MgkwyIEKKWmalTbw_KjmmICnFGONdDaTvzo3NhGNWvqscoFskmA_H7J75p8EyvUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/search/author/paged?author=Robert C. Martin&page=0&size=10&sortBy=author&direction=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"search",
+								"author",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "author",
+									"value": "Robert C. Martin"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sortBy",
+									"value": "author"
+								},
+								{
+									"key": "direction",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SEARCH  BOOKS BY AUTHOR(PAGINATION)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/search/author/paged?author=Robert C. Martin&page=0&size=10&sortBy=author&direction=asc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"search",
+										"author",
+										"paged"
+									],
+									"query": [
+										{
+											"key": "author",
+											"value": "Robert C. Martin"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										},
+										{
+											"key": "sortBy",
+											"value": "author"
+										},
+										{
+											"key": "direction",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:57:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"title\": \"Clean Architecture\",\n            \"author\": \"Robert C. Martin\",\n            \"isbn\": \"9780134494166\",\n            \"publicationDate\": \"2017-09-20\",\n            \"genre\": \"TECH\",\n            \"description\": \"A guide to software structure and discipline.\",\n            \"publisher\": \"Pearson\",\n            \"pageCount\": 435,\n            \"createdAt\": \"2025-05-08T15:43:57.797837\",\n            \"updatedAt\": \"2025-05-09T15:34:57.376708\",\n            \"available\": false\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Clean Architecture 2\",\n            \"author\": \"Robert C. Martin\",\n            \"isbn\": \"9780134494111\",\n            \"publicationDate\": \"2017-09-20\",\n            \"genre\": \"TECH\",\n            \"description\": \"A guide to software structure and discipline.\",\n            \"publisher\": \"Pearson\",\n            \"pageCount\": 432,\n            \"createdAt\": \"2025-05-09T15:55:36.081746\",\n            \"updatedAt\": null,\n            \"available\": true\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 2,\n    \"last\": true,\n    \"first\": true,\n    \"numberOfElements\": 2,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "SEARCH BOOKS BY GENRE(PAGINATION)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjksImVtYWlsIjoia3V0YXlAcGF0cm9uLmNvbSIsInN1YiI6Imt1dGF5QHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3MDg1OTUsImV4cCI6MTc0Njc5NDk5NX0.MEJ5szUVqToQaDpvODe2N7MgkwyIEKKWmalTbw_KjmmICnFGONdDaTvzo3NhGNWvqscoFskmA_H7J75p8EyvUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/search/genre/paged?genre=TECH&page=0&size=10&sortBy=title&direction=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"search",
+								"genre",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "TECH"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "direction",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SEARCH BOOKS BY GENRE(PAGINATION)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/search/genre/paged?genre=TECH&page=0&size=10&sortBy=title&direction=asc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"search",
+										"genre",
+										"paged"
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "TECH"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										},
+										{
+											"key": "sortBy",
+											"value": "title"
+										},
+										{
+											"key": "direction",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:57:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"title\": \"Clean Architecture\",\n            \"author\": \"Robert C. Martin\",\n            \"isbn\": \"9780134494166\",\n            \"publicationDate\": \"2017-09-20\",\n            \"genre\": \"TECH\",\n            \"description\": \"A guide to software structure and discipline.\",\n            \"publisher\": \"Pearson\",\n            \"pageCount\": 435,\n            \"createdAt\": \"2025-05-08T15:43:57.797837\",\n            \"updatedAt\": \"2025-05-09T15:34:57.376708\",\n            \"available\": false\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Clean Architecture 2\",\n            \"author\": \"Robert C. Martin\",\n            \"isbn\": \"9780134494111\",\n            \"publicationDate\": \"2017-09-20\",\n            \"genre\": \"TECH\",\n            \"description\": \"A guide to software structure and discipline.\",\n            \"publisher\": \"Pearson\",\n            \"pageCount\": 432,\n            \"createdAt\": \"2025-05-09T15:55:36.081746\",\n            \"updatedAt\": null,\n            \"available\": true\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 2,\n    \"last\": true,\n    \"first\": true,\n    \"numberOfElements\": 2,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "SEARCH BOOKS BY ISBN(PAGINATION)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjksImVtYWlsIjoia3V0YXlAcGF0cm9uLmNvbSIsInN1YiI6Imt1dGF5QHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3MDg1OTUsImV4cCI6MTc0Njc5NDk5NX0.MEJ5szUVqToQaDpvODe2N7MgkwyIEKKWmalTbw_KjmmICnFGONdDaTvzo3NhGNWvqscoFskmA_H7J75p8EyvUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/search/isbn/paged?isbn=9780134494166&page=0&size=10&sortBy=isbn&direction=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"search",
+								"isbn",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "isbn",
+									"value": "9780134494166"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sortBy",
+									"value": "isbn"
+								},
+								{
+									"key": "direction",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SEARCH BOOKS BY ISBN(PAGINATION)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/search/isbn/paged?isbn=9780134494166&page=0&size=10&sortBy=isbn&direction=asc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"search",
+										"isbn",
+										"paged"
+									],
+									"query": [
+										{
+											"key": "isbn",
+											"value": "9780134494166"
+										},
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										},
+										{
+											"key": "sortBy",
+											"value": "isbn"
+										},
+										{
+											"key": "direction",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:57:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"title\": \"Clean Architecture\",\n            \"author\": \"Robert C. Martin\",\n            \"isbn\": \"9780134494166\",\n            \"publicationDate\": \"2017-09-20\",\n            \"genre\": \"TECH\",\n            \"description\": \"A guide to software structure and discipline.\",\n            \"publisher\": \"Pearson\",\n            \"pageCount\": 435,\n            \"createdAt\": \"2025-05-08T15:43:57.797837\",\n            \"updatedAt\": \"2025-05-09T15:34:57.376708\",\n            \"available\": false\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"last\": true,\n    \"first\": true,\n    \"numberOfElements\": 1,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "SEARCH ALL BOOKS BY PAGINATION",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjksImVtYWlsIjoia3V0YXlAcGF0cm9uLmNvbSIsInN1YiI6Imt1dGF5QHBhdHJvbi5jb20iLCJpYXQiOjE3NDY3MDg1OTUsImV4cCI6MTc0Njc5NDk5NX0.MEJ5szUVqToQaDpvODe2N7MgkwyIEKKWmalTbw_KjmmICnFGONdDaTvzo3NhGNWvqscoFskmA_H7J75p8EyvUA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/paged?page=0&size=10&sortBy=title&direction=asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "direction",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SEARCH ALL BOOKS BY PAGINATION",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/paged?page=0&size=10&sortBy=title&direction=asc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"paged"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "size",
+											"value": "10"
+										},
+										{
+											"key": "sortBy",
+											"value": "title"
+										},
+										{
+											"key": "direction",
+											"value": "asc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:57:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"title\": \"Clean Architecture\",\n            \"author\": \"Robert C. Martin\",\n            \"isbn\": \"9780134494166\",\n            \"publicationDate\": \"2017-09-20\",\n            \"genre\": \"TECH\",\n            \"description\": \"A guide to software structure and discipline.\",\n            \"publisher\": \"Pearson\",\n            \"pageCount\": 435,\n            \"createdAt\": \"2025-05-08T15:43:57.797837\",\n            \"updatedAt\": \"2025-05-09T15:34:57.376708\",\n            \"available\": false\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Clean Architecture 2\",\n            \"author\": \"Robert C. Martin\",\n            \"isbn\": \"9780134494111\",\n            \"publicationDate\": \"2017-09-20\",\n            \"genre\": \"TECH\",\n            \"description\": \"A guide to software structure and discipline.\",\n            \"publisher\": \"Pearson\",\n            \"pageCount\": 432,\n            \"createdAt\": \"2025-05-09T15:55:36.081746\",\n            \"updatedAt\": null,\n            \"available\": true\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Crime and Punishment\",\n            \"author\": \"Fyodor Dostoevsky\",\n            \"isbn\": \"9780140449136\",\n            \"publicationDate\": \"1866-01-01\",\n            \"genre\": \"OTHER\",\n            \"description\": \"A psychological study of guilt and redemption.\",\n            \"publisher\": \"Penguin Classics\",\n            \"pageCount\": 671,\n            \"createdAt\": \"2025-05-08T15:46:46.917004\",\n            \"updatedAt\": null,\n            \"available\": true\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Dune\",\n            \"author\": \"Frank Herbert\",\n            \"isbn\": \"9780441172719\",\n            \"publicationDate\": \"1965-08-01\",\n            \"genre\": \"SCIENCE_FICTION\",\n            \"description\": \"A sci-fi epic set on the desert planet Arrakis.\",\n            \"publisher\": \"Ace Books\",\n            \"pageCount\": 688,\n            \"createdAt\": \"2025-05-08T15:45:51.066606\",\n            \"updatedAt\": null,\n            \"available\": true\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 4,\n    \"last\": true,\n    \"first\": true,\n    \"numberOfElements\": 4,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN UPDATE A BOOK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Clean Architecture\",\n  \"author\": \"Robert C. Martin\",\n  \"isbn\": \"9780134494166\",\n  \"publicationDate\": \"2017-09-20\",\n  \"genre\": \"TECH\",\n  \"description\": \"A guide to software structure and discipline.\",\n  \"publisher\": \"Pearson\",\n  \"pageCount\": 435\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/books/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN UPDATE A BOOK",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"title\": \"Clean Architecture\",\n  \"author\": \"Robert C. Martin\",\n  \"isbn\": \"9780134494166\",\n  \"publicationDate\": \"2017-09-20\",\n  \"genre\": \"TECH\",\n  \"description\": \"A guide to software structure and discipline.\",\n  \"publisher\": \"Pearson\",\n  \"pageCount\": 435\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/books/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:58:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"title\": \"Clean Architecture\",\n    \"author\": \"Robert C. Martin\",\n    \"isbn\": \"9780134494166\",\n    \"publicationDate\": \"2017-09-20\",\n    \"genre\": \"TECH\",\n    \"description\": \"A guide to software structure and discipline.\",\n    \"publisher\": \"Pearson\",\n    \"pageCount\": 435,\n    \"createdAt\": \"2025-05-08T15:43:57.797837\",\n    \"updatedAt\": \"2025-05-09T15:58:03.429758\",\n    \"available\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN DELETE A BOOK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjYsImVtYWlsIjoiY2FnbGFAbGlicmFyaWFuLmNvbSIsInN1YiI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJpYXQiOjE3NDY3MDYwNTUsImV4cCI6MTc0Njc5MjQ1NX0.GQjgi0vdo7LcZv0ECblYlHjwY3yn_wSi2N1Dec2SxMXT7nC7yfEQ_fztunrqcpBqgIm-S-34cXUiqzKob1XNgg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/books/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"books",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN DELETE A BOOK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/books/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"books",
+										"5"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:58:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BORROWING AND RETURNING",
+			"item": [
+				{
+					"name": "PATRON BORROW BOOK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjEwLCJlbWFpbCI6Imt1dGF5QHBhdHJvbi5jb20iLCJzdWIiOiJrdXRheUBwYXRyb24uY29tIiwiaWF0IjoxNzQ2NzkzNjg1LCJleHAiOjE3NDY4ODAwODV9.gzwPcDAZvf3skUXCsg255vGMmIXkn9Hq0OMm3jFUAEFlhzxG9fMeYaYRNH2LGzBXKLVcTHzI1KP6sGGJCgRFyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"bookId\": 1,\n  \"dueDate\": \"2025-06-01\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/borrow",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"borrow"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PATRON BORROW BOOK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"bookId\": 1,\n  \"dueDate\": \"2025-06-01\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/borrow",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"borrow"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:02:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"userId\": 10,\n    \"userName\": \"KutayUPDATED Akpınar\",\n    \"bookId\": 1,\n    \"bookTitle\": \"Clean Architecture\",\n    \"bookAuthor\": \"Robert C. Martin\",\n    \"borrowDate\": \"2025-05-09\",\n    \"dueDate\": \"2025-06-01\",\n    \"returnDate\": null,\n    \"status\": \"BORROWED\"\n}"
+						}
+					]
+				},
+				{
+					"name": "PATRON RETURN BOOK",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjEwLCJlbWFpbCI6Imt1dGF5QHBhdHJvbi5jb20iLCJzdWIiOiJrdXRheUBwYXRyb24uY29tIiwiaWF0IjoxNzQ2NzkzNjg1LCJleHAiOjE3NDY4ODAwODV9.gzwPcDAZvf3skUXCsg255vGMmIXkn9Hq0OMm3jFUAEFlhzxG9fMeYaYRNH2LGzBXKLVcTHzI1KP6sGGJCgRFyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/1/return",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"1",
+								"return"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PATRON RETURN BOOK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/3/return",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"3",
+										"return"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:02:41 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"userId\": 10,\n    \"userName\": \"KutayUPDATED Akpınar\",\n    \"bookId\": 1,\n    \"bookTitle\": \"Clean Architecture\",\n    \"bookAuthor\": \"Robert C. Martin\",\n    \"borrowDate\": \"2025-05-09\",\n    \"dueDate\": \"2025-06-01\",\n    \"returnDate\": \"2025-05-09\",\n    \"status\": \"RETURNED\"\n}"
+						}
+					]
+				},
+				{
+					"name": "BOOKS WHICH HAS BEEN BARROWED BY USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjEwLCJlbWFpbCI6Imt1dGF5QHBhdHJvbi5jb20iLCJzdWIiOiJrdXRheUBwYXRyb24uY29tIiwiaWF0IjoxNzQ2NzkzNjg1LCJleHAiOjE3NDY4ODAwODV9.gzwPcDAZvf3skUXCsg255vGMmIXkn9Hq0OMm3jFUAEFlhzxG9fMeYaYRNH2LGzBXKLVcTHzI1KP6sGGJCgRFyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/me",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"me"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "BOOKS WHICH HAS BEEN BARROWED BY USER",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/me",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"me"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:02:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 3,\n            \"userId\": 10,\n            \"userName\": \"KutayUPDATED Akpınar\",\n            \"bookId\": 1,\n            \"bookTitle\": \"Clean Architecture\",\n            \"bookAuthor\": \"Robert C. Martin\",\n            \"borrowDate\": \"2025-05-09\",\n            \"dueDate\": \"2025-06-01\",\n            \"returnDate\": \"2025-05-09\",\n            \"status\": \"RETURNED\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"first\": true,\n    \"numberOfElements\": 1,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "ACTIVE BOOKS (BORROWED AND NOT RETURNED) BY USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjEwLCJlbWFpbCI6Imt1dGF5QHBhdHJvbi5jb20iLCJzdWIiOiJrdXRheUBwYXRyb24uY29tIiwiaWF0IjoxNzQ2NzkzNjg1LCJleHAiOjE3NDY4ODAwODV9.gzwPcDAZvf3skUXCsg255vGMmIXkn9Hq0OMm3jFUAEFlhzxG9fMeYaYRNH2LGzBXKLVcTHzI1KP6sGGJCgRFyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/me/active",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"me",
+								"active"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ACTIVE BOOKS (BORROWED AND NOT RETURNED) BY USER",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/me/active",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"me",
+										"active"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:03:09 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalPages\": 0,\n    \"totalElements\": 0,\n    \"first\": true,\n    \"numberOfElements\": 0,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": true\n}"
+						}
+					]
+				},
+				{
+					"name": "SPECIFIC BORROWING DETAIL",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjEwLCJlbWFpbCI6Imt1dGF5QHBhdHJvbi5jb20iLCJzdWIiOiJrdXRheUBwYXRyb24uY29tIiwiaWF0IjoxNzQ2NzkzNjg1LCJleHAiOjE3NDY4ODAwODV9.gzwPcDAZvf3skUXCsg255vGMmIXkn9Hq0OMm3jFUAEFlhzxG9fMeYaYRNH2LGzBXKLVcTHzI1KP6sGGJCgRFyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SPECIFIC BORROWING DETAIL",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:03:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"userId\": 10,\n    \"userName\": \"KutayUPDATED Akpınar\",\n    \"bookId\": 1,\n    \"bookTitle\": \"Clean Architecture\",\n    \"bookAuthor\": \"Robert C. Martin\",\n    \"borrowDate\": \"2025-05-09\",\n    \"dueDate\": \"2025-06-01\",\n    \"returnDate\": \"2025-05-09\",\n    \"status\": \"RETURNED\"\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN VIEWS BOOK ACCORDING TO STATUS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjExLCJlbWFpbCI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJzdWIiOiJjYWdsYUBsaWJyYXJpYW4uY29tIiwiaWF0IjoxNzQ2NzkzNzAzLCJleHAiOjE3NDY4ODAxMDN9.A6JANeG0pNjqT54kumeNtU_rzwNwx6VW3Z8Qi33LHtRtTYIwiY2eCrhd2le1UFDpqM67WWnouIuz_nWs7tpxWw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/status/RETURNED",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"status",
+								"RETURNED"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN VIEWS BOOK ACCORDING TO STATUS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/status/RETURNED",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"status",
+										"RETURNED"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:03:43 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 3,\n            \"userId\": 10,\n            \"userName\": \"KutayUPDATED Akpınar\",\n            \"bookId\": 1,\n            \"bookTitle\": \"Clean Architecture\",\n            \"bookAuthor\": \"Robert C. Martin\",\n            \"borrowDate\": \"2025-05-09\",\n            \"dueDate\": \"2025-06-01\",\n            \"returnDate\": \"2025-05-09\",\n            \"status\": \"RETURNED\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"last\": true,\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"first\": true,\n    \"numberOfElements\": 1,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIAN VIEWS BORROWING TRANSACTIONS OF USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjExLCJlbWFpbCI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJzdWIiOiJjYWdsYUBsaWJyYXJpYW4uY29tIiwiaWF0IjoxNzQ2NzkzNzAzLCJleHAiOjE3NDY4ODAxMDN9.A6JANeG0pNjqT54kumeNtU_rzwNwx6VW3Z8Qi33LHtRtTYIwiY2eCrhd2le1UFDpqM67WWnouIuz_nWs7tpxWw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/user/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"user",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIAN VIEWS BORROWING TRANSACTIONS OF USER",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/user/10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"user",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 12:47:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 1,\n            \"userId\": 10,\n            \"userName\": \"Kutay Akpınar\",\n            \"bookId\": 1,\n            \"bookTitle\": \"Clean Architecture\",\n            \"bookAuthor\": \"Robert C. Martin\",\n            \"borrowDate\": \"2025-05-09\",\n            \"dueDate\": \"2025-06-01\",\n            \"returnDate\": \"2025-05-09\",\n            \"status\": \"RETURNED\"\n        },\n        {\n            \"id\": 2,\n            \"userId\": 10,\n            \"userName\": \"Kutay Akpınar\",\n            \"bookId\": 1,\n            \"bookTitle\": \"Clean Architecture\",\n            \"bookAuthor\": \"Robert C. Martin\",\n            \"borrowDate\": \"2025-05-09\",\n            \"dueDate\": \"2025-06-01\",\n            \"returnDate\": null,\n            \"status\": \"BORROWED\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"sorted\": true,\n            \"unsorted\": false,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 2,\n    \"last\": true,\n    \"first\": true,\n    \"numberOfElements\": 2,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"sorted\": true,\n        \"unsorted\": false,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "PATRONS VIEW THEIR HISTORY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiUEFUUk9OIiwiaWQiOjEwLCJlbWFpbCI6Imt1dGF5QHBhdHJvbi5jb20iLCJzdWIiOiJrdXRheUBwYXRyb24uY29tIiwiaWF0IjoxNzQ2NzkzNjg1LCJleHAiOjE3NDY4ODAwODV9.gzwPcDAZvf3skUXCsg255vGMmIXkn9Hq0OMm3jFUAEFlhzxG9fMeYaYRNH2LGzBXKLVcTHzI1KP6sGGJCgRFyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/me/history",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"me",
+								"history"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "PATRONS VIEW THEIR HISTORY",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/me/history",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"me",
+										"history"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:13:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 3,\n            \"userId\": 10,\n            \"userName\": \"KutayUPDATED Akpınar\",\n            \"bookId\": 1,\n            \"bookTitle\": \"Clean Architecture\",\n            \"bookAuthor\": \"Robert C. Martin\",\n            \"borrowDate\": \"2025-05-09\",\n            \"dueDate\": \"2025-06-01\",\n            \"returnDate\": \"2025-05-09\",\n            \"status\": \"RETURNED\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"unsorted\": false,\n            \"sorted\": true,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"last\": true,\n    \"numberOfElements\": 1,\n    \"first\": true,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"unsorted\": false,\n        \"sorted\": true,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIN VIEW SPECIFIC USER HISTORY",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjExLCJlbWFpbCI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJzdWIiOiJjYWdsYUBsaWJyYXJpYW4uY29tIiwiaWF0IjoxNzQ2NzkzNzAzLCJleHAiOjE3NDY4ODAxMDN9.A6JANeG0pNjqT54kumeNtU_rzwNwx6VW3Z8Qi33LHtRtTYIwiY2eCrhd2le1UFDpqM67WWnouIuz_nWs7tpxWw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/user/10/history",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"user",
+								"10",
+								"history"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIN VIEW SPECIFIC USER HISTORY",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/user/10/history",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"user",
+										"10",
+										"history"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:15:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 3,\n            \"userId\": 10,\n            \"userName\": \"KutayUPDATED Akpınar\",\n            \"bookId\": 1,\n            \"bookTitle\": \"Clean Architecture\",\n            \"bookAuthor\": \"Robert C. Martin\",\n            \"borrowDate\": \"2025-05-09\",\n            \"dueDate\": \"2025-06-01\",\n            \"returnDate\": \"2025-05-09\",\n            \"status\": \"RETURNED\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"unsorted\": false,\n            \"sorted\": true,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"last\": true,\n    \"numberOfElements\": 1,\n    \"first\": true,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"unsorted\": false,\n        \"sorted\": true,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "LIBRARIANS VIEW ALL USERS BORROWINGS",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjExLCJlbWFpbCI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJzdWIiOiJjYWdsYUBsaWJyYXJpYW4uY29tIiwiaWF0IjoxNzQ2NzkzNzAzLCJleHAiOjE3NDY4ODAxMDN9.A6JANeG0pNjqT54kumeNtU_rzwNwx6VW3Z8Qi33LHtRtTYIwiY2eCrhd2le1UFDpqM67WWnouIuz_nWs7tpxWw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"all"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "LIBRARIANS VIEW ALL USERS BORROWINGS",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"all"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:16:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"content\": [\n        {\n            \"id\": 3,\n            \"userId\": 10,\n            \"userName\": \"KutayUPDATED Akpınar\",\n            \"bookId\": 1,\n            \"bookTitle\": \"Clean Architecture\",\n            \"bookAuthor\": \"Robert C. Martin\",\n            \"borrowDate\": \"2025-05-09\",\n            \"dueDate\": \"2025-06-01\",\n            \"returnDate\": \"2025-05-09\",\n            \"status\": \"RETURNED\"\n        }\n    ],\n    \"pageable\": {\n        \"pageNumber\": 0,\n        \"pageSize\": 10,\n        \"sort\": {\n            \"unsorted\": false,\n            \"sorted\": true,\n            \"empty\": false\n        },\n        \"offset\": 0,\n        \"paged\": true,\n        \"unpaged\": false\n    },\n    \"totalPages\": 1,\n    \"totalElements\": 1,\n    \"last\": true,\n    \"numberOfElements\": 1,\n    \"first\": true,\n    \"size\": 10,\n    \"number\": 0,\n    \"sort\": {\n        \"unsorted\": false,\n        \"sorted\": true,\n        \"empty\": false\n    },\n    \"empty\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "OVERDUE REPORTS ( I ADD NEW BOOK MANUALLY OVERDUE)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiTElCUkFSSUFOIiwiaWQiOjExLCJlbWFpbCI6ImNhZ2xhQGxpYnJhcmlhbi5jb20iLCJzdWIiOiJjYWdsYUBsaWJyYXJpYW4uY29tIiwiaWF0IjoxNzQ2NzkzNzAzLCJleHAiOjE3NDY4ODAxMDN9.A6JANeG0pNjqT54kumeNtU_rzwNwx6VW3Z8Qi33LHtRtTYIwiY2eCrhd2le1UFDpqM67WWnouIuz_nWs7tpxWw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/borrowings/overdue/report",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"borrowings",
+								"overdue",
+								"report"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OVERDUE REPORTS ( I ADD NEW BOOK MANUALLY OVERDUE)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/borrowings/overdue/report",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"borrowings",
+										"overdue",
+										"report"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 09 May 2025 13:21:31 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 4,\n        \"userId\": 10,\n        \"userName\": \"KutayUPDATED Akpınar\",\n        \"bookId\": 1,\n        \"bookTitle\": \"Clean Architecture\",\n        \"bookAuthor\": \"Robert C. Martin\",\n        \"borrowDate\": \"2025-05-09\",\n        \"dueDate\": \"2025-06-01\",\n        \"returnDate\": \"2025-05-09\",\n        \"status\": \"OVERDUE\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}

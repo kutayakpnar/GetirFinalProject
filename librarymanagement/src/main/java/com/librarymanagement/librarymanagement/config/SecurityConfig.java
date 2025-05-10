@@ -53,6 +53,9 @@ public class SecurityConfig {
                         .requestMatchers("/api/users/register").permitAll()
                         // Swagger UI and OpenAPI paths
                         .requestMatchers("/swagger-ui.html", "/swagger-ui/**", "/api-docs/**", "/v3/api-docs/**").permitAll()
+                        // Book availability updates stream and demo page
+                        .requestMatchers("/api/books/availability/stream").permitAll()
+                        .requestMatchers("/book-availability.html").permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

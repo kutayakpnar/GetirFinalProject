@@ -26,6 +26,7 @@ public class BookServiceImpl implements BookService {
     private static final Logger logger = LoggerFactory.getLogger(BookServiceImpl.class);
     
     private final BookRepository bookRepository;
+    private final BookAvailabilityService bookAvailabilityService;
 
     @Override
     @Transactional
@@ -55,6 +56,10 @@ public class BookServiceImpl implements BookService {
         Book savedBook = bookRepository.save(book);
         logger.debug("Successfully added new book: ID={}, ISBN={}, Title={}", 
                 savedBook.getId(), savedBook.getIsbn(), savedBook.getTitle());
+        
+        // Publish availability update for the new book
+        bookAvailabilityService.publishAvailabilityUpdate(
+                savedBook.getId(), savedBook.getTitle(), savedBook.getAvailable());
         
         return mapToBookResponseDto(savedBook);
     }
@@ -171,6 +176,10 @@ public class BookServiceImpl implements BookService {
             logger.debug("Successfully updated book: ID={}, ISBN={}, Title={}", 
                     updatedBook.getId(), updatedBook.getIsbn(), updatedBook.getTitle());
             
+            // Publish availability update if the book's availability might have changed
+            bookAvailabilityService.publishAvailabilityUpdate(
+                    updatedBook.getId(), updatedBook.getTitle(), updatedBook.getAvailable());
+            
             return mapToBookResponseDto(updatedBook);
         } catch (BookNotFoundException e) {
             logger.warn("Failed to update - Book not found with ID: {}", id);
@@ -188,8 +197,16 @@ public class BookServiceImpl implements BookService {
             throw new BookNotFoundException("Book not found with id: " + id);
         }
         
+        // Get book details before deletion for the update
+        Book book = bookRepository.findById(id)
+                .orElseThrow(() -> new BookNotFoundException("Book not found with id: " + id));
+        String title = book.getTitle();
+        
         bookRepository.deleteById(id);
         logger.debug("Successfully deleted book with ID: {}", id);
+        
+        // Publish availability update for the deleted book (setting available to false)
+        bookAvailabilityService.publishAvailabilityUpdate(id, title, false);
     }
     
     // Paginated methods

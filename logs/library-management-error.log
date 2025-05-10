@@ -1,0 +1,29 @@
+2025-05-10 21:23:22 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'requestMappingHandlerMapping', defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/web/reactive/config/DelegatingWebFluxConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-05-10 21:23:43 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'requestMappingHandlerMapping', defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/web/reactive/config/DelegatingWebFluxConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-05-10 21:29:25 [http-nio-8080-exec-4] ERROR c.l.l.security.JwtTokenProvider - Expired JWT token: JWT expired at 2025-05-10T12:28:05Z. Current time: 2025-05-10T18:29:25Z, a difference of 21680261 milliseconds.  Allowed clock skew: 0 milliseconds.
